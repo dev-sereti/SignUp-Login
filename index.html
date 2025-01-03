@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sign Up and Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Login Form -->
+    <div id="loginForm">
+        <h2>Login</h2>
+        <div class="form-group">
+            <label for="loginEmail">Email</label>
+            <input type="email" id="loginEmail" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword" placeholder="Enter your password">
+        </div>
+        <button class="btn" onclick="loginUser()">Login</button>
+        <div class="toggle-link" onclick="showSignUp()">Don't have an account? Sign Up</div>
+    </div>
+
+    <!-- Sign Up Form -->
+    <div id="signUpForm" class="hidden">
+        <h2>Sign Up</h2>
+        <div class="form-group">
+            <label for="signUpName">Name</label>
+            <input type="text" id="signUpName" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <label for="signUpEmail">Email</label>
+            <input type="email" id="signUpEmail" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+            <label for="signUpPassword">Password</label>
+            <input type="password" id="signUpPassword" placeholder="Enter your password">
+        </div>
+        <button class="btn" onclick="signUpUser()">Sign Up</button>
+        <div class="toggle-link" onclick="showLogin()">Already have an account? Login</div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
